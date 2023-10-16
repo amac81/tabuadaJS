@@ -93,3 +93,8 @@ h2 {
 #multiplication-operations .result {
     margin-left: 0.4rem;
 }
+
+
+#multiplication-title span{
+    color: #11f176;
+}

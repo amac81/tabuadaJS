@@ -4,6 +4,7 @@ const multiplicationForm = document.querySelector("#multiplication-form");
 const numberInput = document.querySelector("#number");
 const multiplicationInput = document.querySelector("#multiplicator");
 const multiplicationTable = document.querySelector("#multiplication-operations");
+const multiplicationTitle = document.querySelector("#multiplication-title span");
 
 // funções
 const createTable = (number, multiplicatorNumber) => {
@@ -25,10 +26,10 @@ const createTable = (number, multiplicatorNumber) => {
         const parser = new DOMParser();
         const htmlTemplate = parser.parseFromString(template, "text/html");
         const row = htmlTemplate.querySelector(".row");
-        multiplicationTable.appendChild(row);
-        
+        multiplicationTable.appendChild(row);    
     }
-
+    
+    multiplicationTitle.innerText = number;
 };
 
 // eventos
